@@ -2,18 +2,18 @@
 #define _CRT_SECURE_NO_WARNINGS
 int main()
 {
-	int a, b;
+	float a, b;
 	printf("Найдём площадь и периметр прямоугольника:\n ");
 	printf("Введите значение длины a:\n ");
-	scanf("%d", &a);
+	scanf("%f", &a);
 	printf("Введите значение ширины b:\n ");
-	scanf("%d", &b);
-	printf("Имеем прямоугольник с длиной %d и шириной %d\n", a, b);
+	scanf("%f", &b);
+	printf("Имеем прямоугольник с длиной %f и шириной %f\n", a, b);
 
-	int S, P;
+	float S, P;
 	S = a * b;
 	P = 2 * (a + b);
 
-	printf("Имеем прямоугольник с площадью %d и периметром %d\n", S, P);
+	printf("Имеем прямоугольник с площадью %.2f и периметром %.2f\n", S, P);
 	return 0;
 }
