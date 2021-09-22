@@ -1,0 +1,19 @@
+#include <stdio.h>
+#define _CRT_SECURE_NO_WARNINGS
+
+int main()
+{
+	float d;
+	float pi = 3.14;
+	
+	printf("Дана окружность. Найдём её длину черед диаметр.\n");
+	printf("Введите значение диаметра d:\n");
+	scanf("%f", &d);
+	printf("Имеем окружность с диаметром d = %f.\n", d);
+
+	float L;
+	L = pi * d;
+
+	printf("Длина окружности с диаметром d = %f равна %f.\n", d, L);
+	return 0;
+}
