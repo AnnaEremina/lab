@@ -1,0 +1,20 @@
+#include <stdio.h>
+#define _CRT_SECURE_NO_WARNINGS_GLOBALS
+
+int main()
+{
+	int a, b;
+
+	printf("Даны два числа, найдём их среднее арифметическое.\n");
+	printf("Введите значение числа a:\n");
+	scanf("%d", &a);
+	printf("Введите значение числа b:\n");
+	scanf("%d", &b);
+	printf("Имеем числа a = %d и b = %d.\n", a, b);
+
+	float S;
+	S = ((float)a + (float)b) / 2;
+
+	printf("Среднее арифметическое S = %.1f.\n", S);
+	return 0;
+}
