@@ -1,0 +1,27 @@
+#include <stdio.h>
+#define _CRT_SECURE_NO_WARNINGS_GLOBALS
+
+int main()
+{
+	float a, b;
+
+	printf("Даны два числа, найдём их сумму, разность, произведение и частное их квадратов.\n");
+	printf("Введите значение числа a:\n");
+	scanf("%f", &a);
+	printf("Введите значение числа b:\n");
+	scanf("%f", &b);
+	printf("Имеем числа a = %f и b = %f.\n", a, b);
+
+	float S, R, P, Ch;
+	S = a*a + b*b;
+	R = a*a - b*b;
+	P = a*a*b*b;
+	Ch = (a*a)/(b*b);
+
+	printf("Сумма квадратов S = %f.\n", S);
+	printf("Разность квадратов R = %f.\n", R);
+	printf("Произведение квадратов P = %f.\n", P);
+	printf("Частное Ch = %f.\n", Ch);
+	
+	return 0;
+}
