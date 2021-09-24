@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <math.h>
+#define _CRT_SECURE_NO_WARNINGS_GLOBALS
+
+int main()
+{
+	float a, b;
+
+	printf("Даны два числа, найдём их сумму, разность, произведение и частное их модулей.\n");
+	printf("Введите значение числа a:\n");
+	scanf("%f", &a);
+	printf("Введите значение числа b:\n");
+	scanf("%f", &b);
+	printf("Имеем числа a = %f и b = %f.\n", a, b);
+
+	float S, R, P, Ch;
+	S = fabsf(a) + fabsf(b);
+	R = fabsf(a) - fabsf(b);
+	P = fabsf(a)*fabsf(b);
+	Ch = fabsf(a)/fabsf(b);
+
+	printf("Сумма модулей S = %f.\n", S);
+	printf("Разность модулей R = %f.\n", R);
+	printf("Произведение модулей P = %f.\n", P);
+	printf("Частное модулей Ch = %f.\n", Ch);
+	
+	return 0;
+}
