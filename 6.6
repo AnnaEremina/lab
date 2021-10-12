@@ -5,7 +5,7 @@
 int main()
 {
     setlocale(LC_ALL, "Rus");
-    int a, r, x;
+    int a, r;
     
     //вспомогательную переменную и три операции умножения.
     
@@ -13,9 +13,10 @@ int main()
     printf("Введите А: ");
     scanf_s("%d", &a);
     
-    r = pow(a, 2);
-    x = r * r * r * r;
+    r = a * a;
+    r = r * r;
+    r = r * r;
     
-    printf("Ответ: %d", x);
+    printf("Ответ: %d", r);
     return 0;
 }
