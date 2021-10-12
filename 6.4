@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+
+//y = 3x^6 − 6x^2 − 7
+
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    
+    int x, y;
+    
+    printf("Найдём значение выражения y=3x^6−6x^2−7 при заданном значении x.\n");
+    printf("Введите x: ");
+    scanf_s("%d", &x);
+    
+    y = 3 * pow(x, 6) - 6 * pow(x, 2) - 7;
+    
+    printf("Ответ: %d.\n", y);
+    return 0;
+}
