@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    int a, r, x;
+    
+    printf("Найдём значение выражения A^8.\n");
+    printf("Введите А: ");
+    scanf_s("%d", &a);
+    
+    r = pow(a, 2);
+    x = r * r * r * r;
+    
+    printf("Ответ: %d", x);
+    return 0;
+}
