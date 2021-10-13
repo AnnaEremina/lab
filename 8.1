@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float a;
+    int b;
+    printf("Введите объём файла: ");
+    scanf("%f", &a);
+    printf("Дан файл а = %.0f байт.\n", a);
+    
+    b = ceilf(a / 1024);
+    printf("В файле а = %.0f байт - %d килобайт.\n", a, b);
+    return 0;
+}
+
