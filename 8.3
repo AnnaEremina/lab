@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int a, b, c;
+    printf("Введите значения а и в: ");
+    scanf("%d %d", &a, &b);
+    if ((a>0) && (b>0) && (a>b))
+    {
+        while(a>b)
+        {
+            a = a - b;
+        }
+        printf("Остаток = %d.\n", a);
+        return 0;
+    }
+    else
+    {
+        printf("Перечитайте, пожалуйста, условие. Вы не правы!\n");
+        return 0;
+    }
+}
+
