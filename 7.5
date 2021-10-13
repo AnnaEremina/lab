@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    float a, b, x;
+    printf("Введите коэффициенты уравнения А и В: \n");
+    scanf("%f %f", &a, &b);
+    
+    if(a==0)
+    {
+        printf("Ты не умеешь читать условие задачи...\n");
+    }
+    else
+    {
+        printf("Решим уравнение %.2f * x + %.2f = 0\n", a, b);
+        x = (- b) / a;
+        printf("Ответ: х = %.2f.\n", x);
+        return 0;
+    }
+}
