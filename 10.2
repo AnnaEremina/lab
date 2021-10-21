@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main()
+{
+    printf("Даны три числа А, В и С.\n");
+    printf("«Справедливы неравенства A < B < C».\n");
+    printf("Проверим на истинность выражение.\n");
+    
+    int a, b, c;
+    
+    printf("Число А: \n");
+    scanf("%d", &a);
+    printf("Число В: \n");
+    scanf("%d", &b);
+    printf("Число C: \n");
+    scanf("%d", &c);
+    
+    if ((a < b) && (b < c))
+    {
+        printf("Высказывание верно.\n");
+        return 0;
+    }
+    else
+    {
+        printf("Высказывание неверно.\n");
+        return 0;
+    }
+}
+
