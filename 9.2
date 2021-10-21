@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    int d, h;
+    printf("Введите день от 1 до 365.\n");
+    scanf("%d", &d);
+    h = d;
+    while(h > 7)
+    {
+        h -= 7;
+    }
+    
+    printf("%d-й день является %d-м в неделе.\n", d, h);
+    return 0;
+}
