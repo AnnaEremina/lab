@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main()
+{
+    int g, st, ost;
+    printf("Введите номер года: ");
+    scanf("%d", &g);
+    if (g < 0)
+    {
+        printf("Вы вообще из какого года?");
+    }
+    else if (g == 0)
+    {
+        printf("Ты с Арзамаса?");
+    }
+    else
+    {
+        printf("Вы в %d году.\n", g);
+        st = g / 100;
+        ost = g % 100;
+        if (ost > 0)
+        {
+            printf("Это %d столетие.\n", st + 1);
+        }
+        else
+        {
+            printf("Это %d столетие.\n", st);
+        }
+    }
+    return 0;
+}
