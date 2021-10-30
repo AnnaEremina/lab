@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main()
+{
+    int a;
+    char* znak;
+    char *chet;
+    printf("Введите число А: ");
+    scanf("%d", &a);
+    
+    if(a == 0){
+        printf("Нулевое число.");
+        return 0;
+    }
+    if (a > 0){
+        znak = "Положительное";
+    }
+    else{
+        znak = "Отрицательное";
+    }
+    if (a % 2 == 0){
+        chet = "чётное число.";
+    }
+    else{
+        chet = "нечётное число.";
+    }
+    printf("%s %s", znak, chet);
+    return 0;
+}
