@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+   
+   float a, b, i;
+   i = 0.1;
+   printf("Введите стоимость 1кг конфет: ");
+   scanf("%f", &a);
+   
+   while(i < 1.1){
+      b = a*i;
+      printf("%g руб; ", b);
+      i = i + 0.1;
+   }
+}
