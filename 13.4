@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+   int n; //степень
+   float a, sum; //основание степени и итог
+   printf("Введите целое число N: ");
+   scanf("%d", &n);           
+   printf("Введите вещественное число A: ");
+   scanf("%f", &a);
+   if (n > 0){
+      sum = 1;
+      for (int i = 1; i <= n; i++) {
+         sum += pow(a, i);
+      }
+      printf("Сумма цифр цепочки 1 + A + A^2 + A^3 + . . . + A^n равна %g", sum);
+   }
+   else{
+      printf("Ошибка ввода! Вы вообще читали задание?\n");
+   }
+}
