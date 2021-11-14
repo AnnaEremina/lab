@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+   int n, i;
+   float a, sum;
+   printf("Введите целое число N: ");
+   scanf("%d", &n);
+   printf("Введите вещественное число A: ");
+   scanf("%f", &a);
+   if (n > 0) {
+      sum = 1;
+      for (int i = 1; i <= n; i++) {
+         sum += pow(-a, i);
+      }
+      printf("значение (1 - A + A^2 - A^3 + . . . +- A^n) равно %g", sum);
+   }
+   else
+      printf("Ошибка ввода! Научитесь читать задание.\n");
+}
