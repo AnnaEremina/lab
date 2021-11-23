@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+   float p;
+   printf("Введите ставку по вкладу: ");
+   scanf("%f", &p);
+   int i = 0;
+   double k = 1000;
+   if ((p > 0) && (p < 25)) {
+      for (k; k <= 1100; k += (float)k * (p / 100)) {
+         i++;
+      }
+      printf("Итоговый размер вклада %g, месяцев прошло: %d", k, i);
+   }
+   else{
+      printf("Ошибка ввода!");
+   }
+}
