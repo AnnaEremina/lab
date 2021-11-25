@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+float RingS(float R1, float R2){
+    return (3.14 * pow (R1, 2)) - (3.14 * pow (R2, 2));
+}
+int main(){
+    for (int x = 1; x <= 3; x++){
+        float r1, r2;
+        printf("Введите радиус R1: ");
+        scanf("%f", &r1);
+        printf("Введите радиус R2: ");
+        scanf("%f", &r2);
+        if (r1 < r2){
+            printf("Неверно введены данные!");
+            return 0;
+        }
+        else{
+            printf("S = %g\n", RingS(r1, r2));
+            return 0;
+        }
+    }
+}
