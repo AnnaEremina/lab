@@ -1,0 +1,20 @@
+#include <stdio.h>
+int Sign(float X){
+    if (X < 0){
+        return -1;
+    }
+    else if (X == 0){
+        return 0;
+    }
+    else if (X > 0){
+        return 1;
+    }
+}
+int main(){
+    float A, B, a, b;
+    printf("Введите числа А и В для нахождения Sign(A) + Sign(B): ");
+    scanf("%f %f", &A, &B);
+    a = Sign(A);
+    b = Sign(B);
+    printf("Искомое значение равно: %g", a + b);
+}
