@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main(){
+    int N;
+    printf("Введите размер массива N: ");
+    scanf("%d", &N);
+    int A[N];
+    srand(time(0));
+    for (int i = 0; i < N; i++){
+        A[i] = -10 + rand()%30;
+        printf("%d\t", A[i]);
+    }
+    int d = 0, f = 1;
+    printf("\n\n");
+    for (int i = 0; i < N; i++){
+        if (i % 2 == 0){
+            printf("%d\t", A[d]);
+            d++;
+        }
+        else{
+            printf("%d\t", A[N-f]);
+            f++;
+        }
+    }
+    return 0;
+} 
